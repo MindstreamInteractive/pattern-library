@@ -1,0 +1,19 @@
+@function z($index) {
+    @if not map-has-key($z-index, $index) {
+        @error 'No index found for `#{$index}` in $z-indexs map.';
+    } @else {
+        @return map-get($z-index, $index);
+    }
+    @error 'Unexpected error.';
+}
+
+@function color($color, $tone: 'base') {
+    @if not map-has-key($colors, $color) {
+        @error 'No palette found for `#{$color}` in $colors map.';
+    } @else if not map-has-key(map-get($colors, $color), $tone) {
+        @error 'No color tone found for `#{$tone}` in $colors.#{$color} map.';
+    } @else {
+        @return map-get(map-get($colors, $color), $tone);
+    }
+    @error 'Unexpected error.';
+}
