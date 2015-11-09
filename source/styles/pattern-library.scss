@@ -97,6 +97,15 @@ $pl-gray-dark: #1a1a18;
                 color: darken($pl-primary, 10%);
             }
         }
+
+
+        .active a {
+            border-bottom: 2px solid $pl-primary;
+
+            &:hover, &:active {
+                border-color: darken($pl-primary, 10%);
+            }
+        }
     }
 
     // Headings

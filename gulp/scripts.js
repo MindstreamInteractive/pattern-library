@@ -11,7 +11,7 @@ var browserify = require('browserify');
 var collapse = require('bundle-collapser/plugin');
 
 $.gulp.task('lint-scripts', function() {
-    return $.gulp.src(config.src + 'scripts/**/*.js')
+    return $.gulp.src([config.src + 'scripts/**/*.js', '!' + config.src + 'scripts/pattern-library/**/*'])
         .pipe(eslint())
         .pipe(eslint.format())
         .pipe($.should(config.prod, eslint.failOnError()))

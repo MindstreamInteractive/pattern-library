@@ -7,7 +7,7 @@ requireDir('./gulp/', { recurse: true });
 gulp.task('clean', require('del').bind(null, [config.dest + '**/*', '!.*']));
 
 gulp.task('default', ['clean'], function() {
-    gulp.start('styles', 'images', 'scripts', 'copy', 'html');
+    gulp.start('styles', 'images', 'scripts', 'scripts-pl', 'copy', 'html');
 });
 
 gulp.task('prod', function() {
