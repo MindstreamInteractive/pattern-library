@@ -10,7 +10,7 @@ $pl-max-width: 80rem;
 // Colors
 $pl-primary: #19c0d5;
 
-$pl-gray-light: #cccccc;
+$pl-gray-light: #ccc;
 $pl-gray-dark: #1a1a18;
 
 
@@ -71,10 +71,21 @@ $pl-gray-dark: #1a1a18;
             color: white;
             padding: 1em 1.5em;
             text-decoration: none;
+        }
 
-            &:hover, &:active {
-                background-color: $pl-gray-light;
-                color: $pl-gray-dark;
+        .active a,
+        a:hover, &:active {
+            position: relative;
+
+            &:after {
+                background: $pl-primary;
+                content: '';
+                display: block;
+                position: absolute;
+                height: 2px;
+                right: 0;
+                bottom: 0;
+                left: 0;
             }
         }
     }
@@ -97,22 +108,19 @@ $pl-gray-dark: #1a1a18;
                 color: darken($pl-primary, 10%);
             }
         }
-
-
-        .active a {
-            border-bottom: 2px solid $pl-primary;
-
-            &:hover, &:active {
-                border-color: darken($pl-primary, 10%);
-            }
-        }
     }
 
     // Headings
     &-h-title {
         font-size: 1.75em;
-        margin-bottom: 0.5em;
+        margin-bottom: 1em;
     }
+    &-h-subtitle {
+        border-bottom: 1px solid $pl-gray-light;
+        font-size: 1em;
+        padding-bottom: 0.25em;
+    }
+
 
     &-main {
         padding: 0.5em 0;

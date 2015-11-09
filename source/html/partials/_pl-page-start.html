@@ -25,12 +25,15 @@
             </div>
         </div>
         <nav class="pl-nav-main">
+            @@if (nav) {
+                <input type="hidden" value="@@nav" id="navCurrent">
+            }
             <ul>
-                <li class="pl-nav__item"><a href="#">Basics</a></li>
-                <li class="pl-nav__item"><a href="#">Fragments</a></li>
-                <li class="pl-nav__item"><a href="#">Modules</a></li>
-                <li class="pl-nav__item"><a href="#">Templates</a></li>
-                <li class="pl-nav__item"><a href="#">Pages</a></li>
+                <li class="pl-nav__item pl-nav__item--basics"><a href="/basics">Basics</a></li>
+                <li class="pl-nav__item pl-nav__item--fragments"><a href="/fragements">Fragments</a></li>
+                <li class="pl-nav__item pl-nav__item--modules"><a href="/modules">Modules</a></li>
+                <li class="pl-nav__item pl-nav__item--tempaltes"><a href="/templates">Templates</a></li>
+                <li class="pl-nav__item pl-nav__item--pages"><a href="/pages">Pages</a></li>
             </ul>
         </nav>
     </header>
