@@ -8,5 +8,5 @@ $.gulp.task('scripts-pl', function() {
         .on('error', $.notify.onError('<%= error.message %>'))
         .pipe(uglify())
         .pipe(concat('pattern-library.js'))
-        .pipe($.gulp.dest(config.dest + 'Content/Scripts/'))
+        .pipe($.gulp.dest(config.dest + 'Content/pattern-library/'))
 });
