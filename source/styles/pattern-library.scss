@@ -3,3 +3,113 @@
 @import 'global/vars';
 
 @import 'utils/functions/map-getters';
+
+
+$pl-max-width: 80rem;
+
+// Colors
+$pl-primary: #19c0d5;
+
+$pl-gray-light: #cccccc;
+$pl-gray-dark: #1a1a18;
+
+
+.pl {
+    .wrapper {
+        margin: 0 auto;
+        max-width: $pl-max-width;
+        padding: 1rem 1.5rem;
+    }
+
+    // Logo
+    &-logo {
+        background-color: $pl-primary;
+        margin: 0 auto;
+        max-width: 80em;
+
+        &__img, &__body {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        &__img {
+            font-size: 0;
+            line-height: 0;
+        }
+        &__body {
+            color: white;
+            font-size: 1.5rem;
+            line-height: 1;
+            padding-left: 0.25em;
+            text-align: left;
+        }
+    }
+
+    // Navigation
+    &-nav-main, &-nav-sub {
+        margin: 0 auto;
+        max-width: $pl-max-width;
+
+        ul {
+            display: block;
+            list-style: normal;
+
+            > li {
+                display: inline-block;
+
+                a {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    // Nav Main
+    &-nav-main {
+        background-color: $pl-gray-dark;
+
+        a {
+            color: white;
+            padding: 1em 1.5em;
+            text-decoration: none;
+
+            &:hover, &:active {
+                background-color: $pl-gray-light;
+                color: $pl-gray-dark;
+            }
+        }
+    }
+
+    // Nav Sub
+    &-nav-sub {
+        border-bottom: 1px solid $pl-gray-light;
+        font-size: 0.875em;
+
+        ul {
+            padding: 0 1em;
+        }
+
+        a {
+            color: $pl-primary;
+            padding: 1em 0.75em;
+            text-decoration: none;
+
+            &:hover, &:active {
+                color: darken($pl-primary, 10%);
+            }
+        }
+    }
+
+    // Headings
+    &-h-title {
+        font-size: 1.75em;
+        margin-bottom: 0.5em;
+    }
+
+    &-main {
+        padding: 0.5em 0;
+
+        p {
+            line-height: 1.5;
+        }
+    }
+}

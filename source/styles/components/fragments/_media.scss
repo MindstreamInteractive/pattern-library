@@ -1,0 +1,28 @@
+// Media Object
+// Nicole Sullivan: http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
+//-------------------
+
+.media {
+    margin: 1em auto;
+    @include cf;
+
+    &, &__body {
+        overflow: hidden;
+        _overflow: visible;
+        zoom: 1;
+    }
+
+    &__img {
+        float: left;
+        margin-right: 1em;
+
+        img {
+            display: block;
+        }
+
+        &--alt {
+            float: right;
+            margin-left: 1em;
+        }
+    }
+}

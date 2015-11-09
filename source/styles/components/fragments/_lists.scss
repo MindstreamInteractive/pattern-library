@@ -1,0 +1,11 @@
+// Lists
+//--------------
+
+@mixin list-inline {
+    display: block;
+    list-style: normal;
+
+    > li {
+        display: inline-block;
+    }
+}

@@ -1,0 +1,40 @@
+// Flag Object
+// Harry Roberts: http://csswizardry.com/2013/05/the-flag-object/
+//-------------------------
+
+.flag {
+    display: table;
+    width: 100%;
+
+    &__img,
+    &__body {
+        display: table-cell;
+        vertical-align: middle;
+
+        .flag--top & {
+            vertical-align: top;
+        }
+
+        .flag--bottom & {
+            vertical-align: bottom;
+        }
+    }
+
+    &__img {
+
+        > img {
+            display: block;
+            max-width: none;
+        }
+
+        .flag--alt & {
+            padding-right: 0;
+        }
+
+    }
+
+    &__body {
+        text-align: left;
+        width: 100%;
+    }
+}

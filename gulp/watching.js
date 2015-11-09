@@ -22,7 +22,7 @@ $.gulp.task('watching', function() {
     });
 
     $.gulp.watch([
-		     config + '/html/**/*.html'
+		     config.src + '/html/**/*.html'
 		], ['html', browserSync.reload]);
     $.gulp.watch(config.src + 'styles/**/*.scss', ['styles']);
     $.gulp.watch(config.src + 'images/**/*.{png,jpg,jpeg,gif,svg}', ['images']);
