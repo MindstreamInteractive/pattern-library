@@ -17,7 +17,7 @@
     &-logo {
         background-color: $pl-primary;
         margin: 0 auto;
-        max-width: 80em;
+        max-width: $pl-max-width;
 
         &__img, &__body {
             display: inline-block;
