@@ -1,9 +1,13 @@
 @import 'breakpoint-sass/stylesheets/breakpoint';
 
+@import 'utils/mixins/clearfix';
+
 @import 'pattern-library/pl-vars';
 @import 'pattern-library/prism';
 @import 'pattern-library/pl-code-toggle';
+@import 'pattern-library/pl-colors';
 @import 'pattern-library/pl-item';
+@import 'pattern-library/pl-swatch';
 
 
 .pl {
@@ -49,7 +53,7 @@
             white-space: nowrap;
             -webkit-overflow-scrolling: touch;
 
-            @include mq(48em) {
+            @include mq($pl-width-md) {
                 overflow-x: visible;
                 overflow-y: visible;
             }

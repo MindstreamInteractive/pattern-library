@@ -1,0 +1,27 @@
+/**
+ * Color swatches
+ */
+
+.pl-colors {
+    display: block;
+    margin: 1em 0 0 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    @include cf;
+
+    &__item {
+        border: 0.25em solid #fff;
+        display: block;
+        float: left;
+        font-size: 0.75em;
+        padding-bottom: 20%;
+        width: 20%;
+
+        @include mq($pl-width-md) {
+            font-size: 1em;
+            padding-bottom: 10%;
+            width: 10%;
+        }
+    }
+}

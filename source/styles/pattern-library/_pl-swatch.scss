@@ -1,0 +1,24 @@
+/**
+ * Color swatch
+ */
+
+.pl-swatch {
+    position: relative;
+
+    &:after {
+        color: #fff;
+        content: attr(data-color);
+        display: inline-block;
+        left: 0.5em;
+        bottom: 0.5em;
+        position: absolute;
+        text-align: left;
+        text-transform: lowercase;
+    }
+
+    &--alt {
+        &:after {
+            color: #000;
+        }
+    }
+}
