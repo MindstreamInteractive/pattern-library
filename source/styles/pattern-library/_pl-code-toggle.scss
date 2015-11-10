@@ -1,0 +1,30 @@
+/**
+ * Code toggle button
+ */
+
+.pl-code-toggle {
+    &__btn {
+        background: transparent;
+        border: 0;
+        color: $pl-gray;
+        cursor: pointer;
+        float: right;
+        font-size: 0.75em;
+        font-weight: normal;
+        margin: 0 0 0 0.5em;
+        padding: 0;
+
+        &:after {
+            content: '+ Show HTML';
+            display: inline-block;
+        }
+
+        &.open:after {
+            content: '- Hide HTML';
+        }
+
+        &:hover {
+            color: $pl-gray-dark;
+        }
+    }
+}

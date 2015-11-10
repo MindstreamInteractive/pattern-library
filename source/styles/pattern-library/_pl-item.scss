@@ -2,7 +2,22 @@
 //----------------
 
 .pl-item {
-    &__code {
+    margin-bottom: $pl-gutter-size;
 
+    &__title {
+        border-bottom: 1px solid $pl-gray-light;
+        font-size: 1em;
+        padding-bottom: 0.25em;
+        text-transform: uppercase;
+    }
+
+    &__code {
+        display: none;
+        font-size: $pl-code-size;
+        margin-top: -0.5em;
+    }
+
+    &__preview {
+        margin: 1em 0;
     }
 }

@@ -1,15 +1,9 @@
 @import 'breakpoint-sass/stylesheets/breakpoint';
 
+@import 'pattern-library/pl-vars';
 @import 'pattern-library/prism';
+@import 'pattern-library/pl-code-toggle';
 @import 'pattern-library/pl-item';
-
-$pl-max-width: 80rem;
-
-// Colors
-$pl-primary: #19c0d5;
-
-$pl-gray-light: #ccc;
-$pl-gray-dark: #1a1a18;
 
 
 .pl {
@@ -111,44 +105,17 @@ $pl-gray-dark: #1a1a18;
     // Headings
     &-h-title {
         font-size: 1.75em;
-        margin-bottom: 1em;
-    }
-    &-h-subtitle {
-        border-bottom: 1px solid $pl-gray-light;
-        font-size: 1em;
-        padding-bottom: 0.25em;
+        margin: 0 auto 1em auto;
+        text-align: center;
+        text-transform: uppercase;
     }
 
-
+    // Main container
     &-main {
         padding: 0.5em 0;
 
         p {
             line-height: 1.5;
         }
-    }
-
-    // Code toggle button
-    &-code-toggle {
-        &:after {
-            color: $pl-gray-light;
-            content: '</>';
-            cursor: pointer;
-            display: inline-block;
-            font-family: 'Courier New', 'Lucida Sans Typewriter', monospace;
-            font-size: 0.75em;
-            font-weight: bold;
-            letter-spacing: -0.15em;
-            margin-left: 0.5em;
-        }
-
-        &:hover:after {
-            color: $pl-gray-dark;
-        }
-    }
-
-    // Code block
-    &-code-block {
-
     }
 }
