@@ -8,7 +8,7 @@
     <title>Pattern Library</title>
 
     <link rel="stylesheet" href="/Content/Styles/main.css">
-    <link rel="stylesheet" href="/Content/Styles/pattern-library.css">
+    <link rel="stylesheet" href="/pattern-library/styles/pattern-library.css">
 
     <script src="/Content/Scripts/main.js"></script>
 
@@ -20,20 +20,20 @@
     <header class="pl-page-head">
         <div class="pl-logo">
             <div class="wrapper">
-                <a href="/" class="pl-logo__img"><img src="http://placehold.it/150x60/CCCCCC/000000&text=Logo" alt="Logo"></a>
+                <a href="/pattern-library" class="pl-logo__img"><img src="http://placehold.it/150x60/CCCCCC/000000&text=Logo" alt="Logo"></a>
                 <h1 class="pl-logo__body">Pattern Library</h1>
             </div>
         </div>
         <nav class="pl-nav-main">
-            @@if (nav) {
+            @@if (context.nav) {
                 <input type="hidden" value="@@nav" id="navCurrent">
             }
             <ul>
-                <li class="pl-nav__item pl-nav__item--basics"><a href="/basics">Basics</a></li>
-                <li class="pl-nav__item pl-nav__item--fragments"><a href="/fragments">Fragments</a></li>
-                <li class="pl-nav__item pl-nav__item--modules"><a href="/modules">Modules</a></li>
-                <li class="pl-nav__item pl-nav__item--templates"><a href="/templates">Templates</a></li>
-                <li class="pl-nav__item pl-nav__item--pages"><a href="/pages">Pages</a></li>
+                <li class="pl-nav__item pl-nav__item--basics"><a href="/pattern-library/basics">Basics</a></li>
+                <li class="pl-nav__item pl-nav__item--fragments"><a href="/pattern-library/fragments">Fragments</a></li>
+                <li class="pl-nav__item pl-nav__item--modules"><a href="/pattern-library/modules">Modules</a></li>
+                <li class="pl-nav__item pl-nav__item--templates"><a href="/pattern-library/templates">Templates</a></li>
+                <li class="pl-nav__item pl-nav__item--pages"><a href="/pattern-library/pages">Pages</a></li>
             </ul>
         </nav>
     </header>
