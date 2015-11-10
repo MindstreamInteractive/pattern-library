@@ -44,6 +44,16 @@
         ul {
             display: block;
             list-style: normal;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+
+            @include mq(48em) {
+                overflow-x: visible;
+                overflow-y: visible;
+            }
+
 
             > li {
                 display: inline-block;
