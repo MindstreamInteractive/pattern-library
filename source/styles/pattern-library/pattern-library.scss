@@ -7,10 +7,13 @@
 @import 'partials/pl-code-toggle';
 @import 'partials/pl-colors';
 @import 'partials/pl-item';
+@import 'partials/pl-set';
 @import 'partials/pl-swatch';
 
 
 .pl {
+    line-height: 1;
+
     .wrapper {
         margin: 0 auto;
         max-width: $pl-max-width;
@@ -33,8 +36,10 @@
         }
         &__body {
             color: white;
-            font-size: 1.5rem;
+            font-family: $pl-font;
+            font-size: 1rem;
             line-height: 1;
+            margin: 0;
             padding: 0.5em 0;
             text-align: left;
 
@@ -75,7 +80,7 @@
 
     // Nav Main
     &-nav-main {
-        background-color: $pl-gray-dark;
+        background-color: $pl-secondary;
 
         a {
             color: white;
@@ -122,6 +127,8 @@
 
     // Headings
     &-h-title {
+        color: black;
+        font-family: $pl-font;
         font-size: 1.75em;
         margin: 0 auto 1em auto;
         text-align: center;

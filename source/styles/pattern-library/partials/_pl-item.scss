@@ -4,8 +4,14 @@
 .pl-item {
     margin-bottom: $pl-gutter-size;
 
+    & + & {
+        margin-bottom: $pl-gutter-size / 2;
+    }
+
     &__title {
+        color: black;
         border-bottom: 1px solid $pl-gray-light;
+        font-family: $pl-font;
         font-size: 1em;
         padding-bottom: 0.25em;
         text-transform: uppercase;
@@ -14,7 +20,7 @@
     &__code {
         display: none;
         font-size: $pl-code-size;
-        margin-top: -0.5em;
+        margin-top: -0.875em;
     }
 
     &__preview {
