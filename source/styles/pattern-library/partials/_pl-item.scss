@@ -2,10 +2,10 @@
 //----------------
 
 .pl-item {
-    margin-bottom: $pl-gutter-size;
+    margin-bottom: $pl-gutter-size !important;
 
-    & + & {
-        margin-bottom: $pl-gutter-size / 2;
+    &:last-of-type {
+        margin-bottom: $pl-gutter-size / 2 !important;
     }
 
     &__title {
