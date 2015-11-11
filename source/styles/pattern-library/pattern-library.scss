@@ -56,7 +56,8 @@
 
         ul {
             display: block;
-            list-style: normal;
+            list-style: none;
+            margin: 0;
             overflow-x: scroll;
             overflow-y: hidden;
             white-space: nowrap;
@@ -70,6 +71,13 @@
 
             > li {
                 display: inline-block;
+                padding: 0;
+                margin: 0;
+
+                &:before, &:after {
+                    content: '';
+                    display: none;
+                }
 
                 a {
                     display: block;

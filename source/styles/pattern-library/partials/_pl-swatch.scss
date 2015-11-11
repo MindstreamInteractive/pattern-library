@@ -3,7 +3,13 @@
  */
 
 .pl-swatch {
+    margin: 0;
     position: relative;
+
+    &:before {
+        content: '';
+        display: none;
+    }
 
     &:after {
         color: #fff;
