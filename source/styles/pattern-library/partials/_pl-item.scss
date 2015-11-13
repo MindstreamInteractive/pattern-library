@@ -25,5 +25,10 @@
 
     &__preview {
         margin: 1em 0;
+
+        // Reverse option
+        .pl-item--reverse & {
+            background: currentColor;
+        }
     }
 }
