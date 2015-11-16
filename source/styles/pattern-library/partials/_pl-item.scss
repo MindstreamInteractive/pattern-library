@@ -3,6 +3,7 @@
 
 .pl-item {
     margin-bottom: $pl-gutter-size !important;
+    @include cf;
 
     &:last-of-type {
         margin-bottom: $pl-gutter-size / 2 !important;
