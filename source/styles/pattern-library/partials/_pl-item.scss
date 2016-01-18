@@ -17,6 +17,10 @@
         font-weight: bold;
         padding-bottom: 0.25em;
         text-transform: uppercase;
+
+        & + p {
+            margin-top: 0.5em;
+        }
     }
 
     &__code {
